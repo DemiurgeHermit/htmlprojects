@@ -80,7 +80,7 @@ body{
 .main{
     background: url('../img/hero.svg') no-repeat center bottom  ;
     background-size: 100%;
-    height: 600px;
+/*    height: 600px;*/
 }
 .main__plan{
     width: 590px;
@@ -120,6 +120,7 @@ body{
     text-align: center;
     letter-spacing: 0.03em;
     color: #8D96BD;
+    padding-bottom: 290px;
 
 }
 .companies{
@@ -131,7 +132,7 @@ body{
 }
 .plan-and-manage{
     background: #F5F8FF;
-    height: 780px;
+
     margin-bottom: 140px;
 }
 .plan-and-manage__wrapper{
@@ -390,10 +391,12 @@ body{
 .blog{
     background: #F5F8FF;
     padding-top: 10px;
+    margin-top: -45px;
 }
 .blog__container{
     width: 1400px;
     margin: 0 auto;
+    
 }
 .blog__slider-wripper{
     display: flex;
@@ -727,10 +730,13 @@ span:last-child{
 .newsletter__container{
     width: 887px;
     margin: 0 auto;
+    margin-top: -100px;
+
 }
 .newsletter__wrapper{
     display: flex;
     justify-content: space-between;
+    margin-top: 100px;
 }
 .newsletter__text-block{
     width: 300px;
@@ -803,28 +809,41 @@ span:last-child{
 
 
 @media screen and (max-width: 1200px) {
+    body{
+        width: 1400px;
+        margin: 0 auto;
+    }
     .container{
-        width: 960px;
+        width: 1150px;
         margin: 0 auto;
     }
     
     .header__nav{
         margin-right: 50px;
     }
-    
-    
+    .plan__text-second{
+/*        padding-bottom: 200px;*/
+    }
+    .newsletter__wrapper{
+        margin-top: 0px;
+    }
 }
 
 @media screen and (max-width: 992px){
+    body{
+        width: 1400px;
+    }
    .container{
-        width: 720px;
         margin: 0 auto;
     } 
-    
+    .header__nav{
+        margin-right: 200px;
+    }
 
 @media screen and (max-width: 768px){
+   
    .container{
-        width: 540px;
+       width: 90%;
         margin: 0 auto;
     }  
  
@@ -833,6 +852,7 @@ span:last-child{
 @media screen and (max-width: 576px){
     .container{
         width: 90%;
+        margin: 0 auto;
     }
 
 }
